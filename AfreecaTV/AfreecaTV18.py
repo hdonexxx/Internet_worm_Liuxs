@@ -145,7 +145,8 @@ def get_website(urlx):
 
 processfile = 'ts_video18/'
 headers = {
-    # 'Cookie':'登录之后可以在网页中找到cookie，可以预览的视频不需要此项',
+    'Cookie':
+    'OAX=0gxQMmLgl+0ACK0L; _au=078f9cee6a93943d0c370a1e1b01ec48; bjStationHistory=%0217041065; _gid=GA1.2.2016727917.1661419950; _ga_5EYT9PM505=GS1.1.1661419989.2.1.1661420288.0.0.0; AbroadChk=OK; AbroadVod=OK; availableChinaLayer=1; PdboxTicket=.A32.7bbT56vyHM9fKZk.j2scLRsW2x9VoiFV32R2M0LvOPwh5422MpFzUMNNWnMLFsp2fJkOs3Zt2IdO08ChWYd3ncKX9GGxLGiJ_0H9He8Poe4fbN_3HymJK0zjB4-iMjK9K0WppwWdUx1EtiCfuHPhoZHrdJnhd54-4LoOmEk3SzulnjZR_hal7XR1AVHL6k0AEU_uAKdChqmr2Wc_UCkhfzo9TyAi1yjvksX_FsqSquVXX6E1XntA6HjBVD7FwcEomAAO1iEekYI4as_GKqJH1BcXZX7J5kbQTWiY_UWhmQ-YPZOyaRWJmah1LAxLIa4qTwqlI0gcjyJIlw7wF0e6R4EoBDvXcdwz1w4HCXVKuGk5Ma1aJv63sSw3-ZIRKF53bt38zoo2iDi1Mm2PJBv-I-_PFK7GpwDhjvyOZwbK7MvQoMy3z2Q8MGN95FpFMnQoDLoMlyIXwVw8nTm-vUW8SIPaqR-o3MmPY5i7XghmZxkdmt9150iEDkX2TpBtWJswmPHqEypAfFLLYHQAunWCWeGgDcdU4oBMabmgkuhirm7yNijFC-1I2O5wsQQ; PdboxBbs=hundanone; PdboxUser=uid%3Dhundanone%26uno%3D44233699%26age%3D22%26sex%3DA%26A%3DAAC%26B%3DBACC%26unick%3Dhundanone%26apply_date%3D1633857950%26name_chk%3D1%26sess_adult_chk%3D1%26broad_name_chk%3D1%26change_password%3D%26chnnl_cd%3D18%26chnnl_name_chk%3D1; isBbs=1; RDB=c8030000000000434e0000000000000000000000000000000100000016160000000000000001; _ga=GA1.1.904974892.1658886125; _ausa=0x951926be; _ausb=0x1044732e; _ga_9PY781H32Y=GS1.1.1661486145.15.1.1661486468.58.0.0; VIN=path_key%3D078f9cee6a93943d0c370a1e1b01ec48_83762567_1661486466647%26path1%3Dreload',
     'user-agent':
     'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
 }
@@ -154,7 +155,7 @@ video_path=''
 
 if __name__ =='__main__':
     # 传入视频网址或者网址末尾编号
-    urlx=89029540
+    urlx=90425866
     url_sta,title = get_user_url(get_website(urlx))
     Down_afreeca_video(url_sta, video_path)
     merge_ts_video(video_path + processfile, video_path + title + '.mp4')
